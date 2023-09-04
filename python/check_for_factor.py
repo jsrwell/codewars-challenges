@@ -34,13 +34,11 @@ def check_for_factor(base: int, factor: int) -> bool:
 class TestChallenge(unittest.TestCase):
     """Test functions of the challenge"""
 
-    def test_should_return_true(self):
+    def test_check_for_factor(self):
         self.assertTrue(check_for_factor(10, 2))
         self.assertTrue(check_for_factor(63, 7))
         self.assertTrue(check_for_factor(2450, 5))
         self.assertTrue(check_for_factor(24612, 3))
-
-    def test_should_return_false(self):
         self.assertFalse(check_for_factor(9, 2))
         self.assertFalse(check_for_factor(653, 7))
         self.assertFalse(check_for_factor(2453, 5))
