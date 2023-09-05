@@ -15,7 +15,7 @@ def name_shuffler(name: str) -> str:
         first name(s) and last name(s).
 
     Returns:
-        str: The name with its parts reversed. 
+        str: The name with its parts reversed.
         For example, "Well Jackson" becomes "Jackson Well".
     """
     return " ".join(name.split()[::-1])
